@@ -1,13 +1,10 @@
 import AboutUssection from '@/components/web/AboutUssection';
 import CTAsection from '@/components/web/CTAsection';
 import { Button } from '@nextui-org/react';
-// import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* <Navbar /> */}
       <main className="container mx-auto px-4 py-12">
      
 

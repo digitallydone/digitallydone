@@ -2,16 +2,21 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-gray-50">
       <main className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-center mb-12">Our Services</h1>
+        <h1 className="mb-8 text-center text-4xl font-bold">Our Services</h1>
+        <p className="mb-4">
+          From branding to event execution, we blend creativity, technology, and
+          strategy to deliver exceptional results for businesses and communities
+          in Ghana.
+        </p>
 
         {/* Online Presence */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-6">Online Presence</h2>
-          <p className="text-gray-700 mb-6">
-            We create stunning websites, manage social media, and optimize your online visibility to
-            make your brand shine.
+          <h2 className="mb-6 text-3xl font-bold">Online Presence</h2>
+          <p className="mb-6 text-gray-700">
+            We create stunning websites, manage social media, and optimize your
+            online visibility to make your brand shine.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <ServiceExample
               title="Website Design"
               description="We design and develop responsive, user-friendly websites."
@@ -27,11 +32,12 @@ export default function Services() {
 
         {/* Events Management */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-6">Events Management</h2>
-          <p className="text-gray-700 mb-6">
-            From product launches to charity galas, we make your events unforgettable.
+          <h2 className="mb-6 text-3xl font-bold">Events Management</h2>
+          <p className="mb-6 text-gray-700">
+            From product launches to charity galas, we make your events
+            unforgettable.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <ServiceExample
               title="Product Launches"
               description="We create immersive experiences for product launches."
@@ -47,11 +53,12 @@ export default function Services() {
 
         {/* Identity Development */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-6">Identity Development</h2>
-          <p className="text-gray-700 mb-6">
-            We craft logos, colors, and designs that reflect your brand’s unique personality.
+          <h2 className="mb-6 text-3xl font-bold">Identity Development</h2>
+          <p className="mb-6 text-gray-700">
+            We craft logos, colors, and designs that reflect your brand’s unique
+            personality.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <ServiceExample
               title="Brand Identity"
               description="We create cohesive brand identities."
@@ -70,9 +77,9 @@ export default function Services() {
 }
 
 const ServiceExample = ({ title, description, client }) => (
-  <div className="bg-white p-6 rounded-lg shadow-lg">
-    <h3 className="text-2xl font-bold mb-4">{title}</h3>
-    <p className="text-gray-700 mb-4">{description}</p>
+  <div className="rounded-lg bg-white p-6 shadow-lg">
+    <h3 className="mb-4 text-2xl font-bold">{title}</h3>
+    <p className="mb-4 text-gray-700">{description}</p>
     <p className="text-sm text-gray-500">Client: {client}</p>
   </div>
 );

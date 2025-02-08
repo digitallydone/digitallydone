@@ -11,15 +11,17 @@ const AboutUssection = () => {
             {" "}
             About Us
           </h3>
+          <p>Where Creativity Meets Social Impact</p>
           <div className="space-y-4 text-lg text-copy">
-            So, imagine Digitally Done is like a super cool team of people who
-            are really good at using computers and the internet to help
-            companies and brands become even better at talking to people and
-            showing off how awe some they are. They have this special knack for
-            making events, like big parties or important meetings, really
-            exciting and memorable. Plus, they know all the tricks to make sure
-            that when a company talks about itself on line, it’s like fireworks
-            going off and everyone pays atten tion.
+            Our Story: Digitally Done was founded with a bold vision—to bridge
+            the digital divide in Ghana while empowering businesses and
+            communities through innovation and creativity. Our journey began
+            with a small but passionate team of creatives, marketers, and
+            strategists who saw a gap in how businesses, NGOs, and local
+            organizations leveraged digital technology. With deep roots in
+            Ghanaian culture and a global outlook, we have transformed from a
+            boutique agency into a powerhouse of digital solutions and event
+            experiences.
           </div>
 
           <Button as={Link} href="/about-us" color="primary" radius="none">
@@ -32,7 +34,7 @@ const AboutUssection = () => {
             isZoomed
             width={800}
             alt="digitally done "
-            className="w-full aspect-square"
+            className="aspect-square w-full"
           />
         </div>
       </div>

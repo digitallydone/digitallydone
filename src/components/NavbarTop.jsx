@@ -111,7 +111,7 @@ export default function Navbar() {
         <Link
           key={`${item}-${index}`}
           // className="w-full p-2 text-xs font-bold capitalize text-copy"
-          className="hover:text-gray-400"
+          className="hover:text-gray-400 uppercase font-semibold"
           href={item.link}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >

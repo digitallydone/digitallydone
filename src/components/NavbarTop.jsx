@@ -129,12 +129,11 @@ export default function Navbar() {
         {/* Logo */}
         <div className="text-3xl font-bold">
           <Link href="/">
-            DIGI DON
-            {/* <Image
+            <Image
               src="/assets/logo.png"
               alt="DIGIDON "
-              className={`size-12 ${pathname !== "/" &&  "opacity-80 brightness-0 filter dark:filter-none"} `}
-            /> */}
+              className={`h-20 ${pathname !== "/" &&  "opacity-80 brightness-0 filter dark:filter-none"} `}
+            />
             {/* DIGIDON */}
           </Link>
         </div>

@@ -17,18 +17,18 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Digidon",
-  description: "Making brands stand out in the digital age of technology solutions.",
+  description:
+    "Making brands stand out in the digital age of technology solutions.",
 };
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-            <head>
+      <head>
         <link rel="icon" href="/favicon.png" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-foreground min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-foreground antialiased`}
       >
         <Providers>
           <Header />

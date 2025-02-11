@@ -102,7 +102,8 @@ export default function Navbar() {
     { name: "Home", link: "/" },
     { name: "About us", link: "/about-us" },
     { name: "Services", link: "/services" },
-    { name: "Contact us", link: "/contact" },
+    { name: "our Work", link: "/our-work" },
+    // { name: "Contact us", link: "/contact" },
   ];
 
   const menuList = (
@@ -110,7 +111,7 @@ export default function Navbar() {
       {menuItems.map((item, index) => (
         <Link
           key={`${item}-${index}`}
-          className="hover:text-gray-400 uppercase font-semibold"
+          className="font-semibold capitalize hover:text-gray-400"
           href={item.link}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -121,44 +122,68 @@ export default function Navbar() {
   );
 
   return (
-    <header
-      className={`top-0 z-50 w-full text-copy ${pathname === "/" && "text-white"} `}
-    >
-      <div className="container mx-auto flex items-center justify-between p-4">
-        {/* Logo */}
-        <div className="text-3xl font-bold">
-          <Link href="/">
-            <Image
-              src="/assets/logo.png"
-              alt="DIGIDON "
-              className={`h-20 ${pathname !== "/" &&  "opacity-80 brightness-0 filter dark:filter-none"} `}
-            />
-            {/* DIGIDON */}
-          </Link>
-        </div>
-        {/* Desktop Menu */}
-        <nav className="hidden space-x-6 md:flex">{menuList}</nav>
+    <>
+      <header className="fixed z-50 w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+        <nav className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="text-2xl font-bold">
+              {" "}
+              <Link href="/">
+                <Image
+                  src="/assets/logo.png"
+                  alt="DIGIDON "
+                  className={`h-10 ${pathname !== "/" && "opacity-80 brightness-0 filter dark:filter-none"} `}
+                />
+                {/* DIGIDON */}
+              </Link>
+            </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="block text-2xl md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle Menu"
-        >
-          {isMenuOpen ? "✖" : "☰"}
-        </button>
-      </div>
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d={
+                    isMenuOpen
+                      ? "M6 18L18 6M6 6l12 12"
+                      : "M4 6h16M4 12h16M4 18h16"
+                  }
+                />
+              </svg>
+            </button>
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div
-          id="mobile-menu-overlay"
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center space-y-6 bg-gray-900 bg-opacity-90 text-center text-2xl md:hidden"
-          onClick={handleOverlayClick}
-        >
-          {menuList}
-        </div>
-      )}
-    </header>
+            {/* Desktop Navigation */}
+            <div className="hidden space-x-8 md:flex">{menuList}</div>
+
+            <button className="hidden rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100 md:block">
+              Get Started
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div
+            className={`transition-all duration-300 md:hidden ${isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"} overflow-hidden`}
+          >
+            <div className="space-y-3 pb-3 pt-4 flex flex-col">
+              {menuList}
+              <button className="w-full rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    </>
   );
 }

@@ -1,40 +1,3 @@
-// const About = () => {
-//   return (
-//     <div className="min-h-screen bg-gray-50">
-// <main className="container mx-auto px-4 py-12">
-//   <h1 className="mb-12 text-center text-4xl font-bold">About Us</h1>
-
-//   {/* Mission Statement */}
-//   <section className="mb-20">
-//     <h2 className="mb-6 text-3xl font-bold">Our Mission</h2>
-//     <p className="text-gray-700">
-//       Our mission is to gather really smart people who want to make sure
-//       everyone has access to digital skills and knowledge, especially
-//       those who might not have as many opportunities. We want to keep
-//       creating projects that help people learn and grow in the digital
-//       world in a way that’s long-lasting and makes a big difference in
-//       their lives.
-//     </p>
-//   </section>
-
-//   {/* Vision Statement */}
-//   <section className="mb-20">
-//     <h2 className="mb-6 text-3xl font-bold">Our Vision</h2>
-//     <p className="text-gray-700">
-//       In the next 2-5 years, we want to become the best at what we do,
-//       known for always doing things amazingly well and coming up with new,
-//       cool ideas. We’ll keep trying new things and doing even better than
-//       people expect, so we can be the leaders in making marketing really
-//       awesome.
-//     </p>
-//   </section>
-// </main>
-//     </div>
-//   );
-// };
-
-// export default About;
-
 "use client";
 import React, { useState } from "react";
 import {
@@ -55,7 +18,6 @@ const AboutUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("online");
 
-  // Previous services object remains the same...
   const services = {
     online: [
       {
@@ -104,30 +66,27 @@ const AboutUs = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechStart",
+      name: "Jerome Adzah",
+      role: "",
       content:
-        "DigitallyDone transformed our online presence completely. Their team's dedication and creativity exceeded our expectations.",
-      image: "/api/placeholder/64/64",
+        "Digitally Done transformed our business’s digital footprint with their innovative strategies. From revamping our social media campaigns to implementing razor-sharp SEO tactics, their team delivered measurable results that boosted our ROI by 40% in just six months. Their ability to blend creativity with analytics is unmatched, and their responsiveness made collaboration seamless. If you’re serious about scaling your brand online, Digitally Done is the partner you need. Highly recommend their services!",
+      image: "/assets/client-testimony/jerome_adzah.jpg",
     },
     {
-      name: "Michael Chen",
-      role: "Marketing Director, GrowthCo",
+      name: "Deborah Smallie Lomotey",
+      role: "  ",
       content:
-        "The team's ability to understand our vision and translate it into reality was remarkable. They delivered beyond our expectations.",
-      image: "/api/placeholder/64/64",
+        "Digitally Done orchestrated the Diplo-Rumble charity boxing event with impeccable precision, turning a high-stakes diplomatic initiative into a resounding success. From coordinating logistics between the EU delegation and local stakeholders to managing the Bukom Boxing Arena setup, their team ensured seamless execution. Digitally Done’s ability to balance grandeur with grassroots impact showcases their mastery in purpose-driven event management. A flawless blend of strategy and soul!",
+      image: "/assets/client-testimony/deborah_smallie_lomote.jpg",
     },
     {
-      name: "Emma Williams",
-      role: "Founder, EcoStyle",
+      name: "Akosua Kwafo Ogyiri",
+      role: "",
       content:
-        "Working with DigitallyDone was a game-changer for our brand. Their strategic approach and creative solutions drove real results.",
-      image: "/api/placeholder/64/64",
+        "Digitally Done delivers social media excellence. Their blend of creativity and analytics transforms campaigns and drives impressions while fostering authentic audience connections. They masterfully integrate advocacy for causes like #EndPeriodPoverty, proving digital strategies can ignite real-world impact. A trusted partner for measurable, purpose-driven growth.",
+      image: "/assets/client-testimony/akosua_kwafo_ogyiri.jpg",
     },
   ];
-
-  // Previous navigation and hero sections remain the same...
-  // Previous services section remains the same...
 
   return (
     <div className="min-h-screen bg-white">
@@ -139,15 +98,21 @@ const AboutUs = () => {
               <h2 className="mb-6 text-4xl font-bold text-gray-800">
                 About Us
               </h2>
+              <p> Where Creativity Meets Social Impact</p>
               <p className="text-gray-600">
-                Founded in 2015, DigitallyDone has been at the forefront of
-                digital innovation, helping businesses transform their digital
-                presence and achieve remarkable growth.
+                <span>Our Story:</span> Digitally Done was founded with a bold
+                vision—to bridge the digital divide in Ghana while empowering
+                businesses and communities through innovation and creativity.
               </p>
               <p className="text-gray-600">
-                Our team of creative professionals combines technical expertise
-                with strategic thinking to deliver solutions that drive real
-                business results.
+                Our journey began with a small but passionate team of creatives,
+                marketers, and strategists who saw a gap in how businesses,
+                NGOs, and local organizations leveraged digital technology.
+              </p>
+              <p className="text-gray-600">
+                With deep roots in Ghanaian culture and a global outlook, we
+                have transformed from a boutique agency into a powerhouse of
+                digital solutions and event experiences.
               </p>
               <div className="mt-8 grid grid-cols-2 gap-6">
                 <div className="rounded-lg bg-purple-50 p-4 text-center">
@@ -166,12 +131,12 @@ const AboutUs = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/api/placeholder/280/320"
+                src="/assets/team/team_at_work.jpg"
                 alt="Team at work"
                 className="h-full w-full rounded-lg object-cover"
               />
               <img
-                src="/api/placeholder/280/320"
+                src="/assets/team/office_space.jpeg"
                 alt="Office space"
                 className="mt-8 h-full w-full rounded-lg object-cover"
               />

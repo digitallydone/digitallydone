@@ -165,9 +165,9 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden space-x-8 md:flex">{menuList}</div>
 
-            <button className="hidden rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100 md:block">
+            <Link href="#contact" className="hidden rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100 md:block">
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Navigation */}

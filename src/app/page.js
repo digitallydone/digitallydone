@@ -73,19 +73,20 @@ const DigitalAgencyWebsite = () => {
           <div className="container mx-auto px-6 py-24">
             <div className="max-w-3xl">
               <h1 className="mb-8 text-4xl font-bold md:text-6xl">
-                We craft digital experiences that drive growth
+                Transforming Brands & Empowering Communities in Ghana –
+                Digitally Done!{" "}
               </h1>
               <p className="mb-12 text-xl text-gray-100">
-                Transform your brand with cutting-edge digital solutions that
-                connect, engage, and convert.
+                Your Partner in Creative Digital Solutions, Event Magic,
+                and Social Impact.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <button className="flex items-center rounded-full bg-white px-8 py-3 font-semibold text-purple-600 transition-colors hover:bg-gray-100">
+                <Link href="#contact" className="flex items-center rounded-full bg-white px-8 py-3 font-semibold text-purple-600 transition-colors hover:bg-gray-100">
                   Start Project <ArrowRight className="ml-2 h-5 w-5" />
-                </button>
-                <button className="rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-purple-600">
-                  View Our Work
-                </button>
+                </Link>
+                <Link href="/our-work" className="rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-purple-600">
+                   Our Work
+                </Link>
               </div>
             </div>
           </div>
@@ -172,24 +173,42 @@ const DigitalAgencyWebsite = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-4">
-            {[1, 2, 3, 4].map((index) => (
-              <div
+            {[
+              {
+                name: "Flag of Europe",
+                logo: "/assets/clients-logo/Flag_of_Europe.png",
+              },
+              {
+                name: "Novo Nordisk",
+                logo: "/assets/clients-logo/Novo_Nordisk.png",
+              },
+              {
+                name: "unicef",
+                logo: "/assets/clients-logo/unicef.png",
+              },
+              {
+                name: "Special Ice",
+                logo: "/assets/clients-logo/Special_Ice.png",
+              },
+            ].map((item, index) => (
+              // <div
+              //   key={index}
+              //   className="rounded-lg bg- white p-8 shadow-sm transition-shadow hover:shadow-md"
+              // >
+              <img
                 key={index}
-                className="rounded-lg bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <img
-                  src={`/api/placeholder/160/80`}
-                  alt={`Client ${index}`}
-                  className="h-auto w-full opacity-70 transition-opacity hover:opacity-100"
-                />
-              </div>
+                src={item.logo}
+                alt={`Client ${item.name}`}
+                className="h-28 w-full opacity-70 transition-opacity hover:opacity-100"
+              />
+              // </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20">
+      <section id="contact" className="py-20">
         <div className="container mx-auto px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>

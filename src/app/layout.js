@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Digidon",
+  title: "Digitally Done",
   description:
     "Making brands stand out in the digital age of technology solutions.",
 };

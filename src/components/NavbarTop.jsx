@@ -1,86 +1,3 @@
-// "use client";
-// import {
-//   Button,
-//   Image,
-//   Navbar,
-//   NavbarBrand,
-//   NavbarContent,
-//   NavbarItem,
-//   NavbarMenu,
-//   NavbarMenuItem,
-//   NavbarMenuToggle,
-// } from "@nextui-org/react";
-// import React from "react";
-// import DarkModeToggle from "./DarkModeToggle";
-// import Link from "next/link";
-
-// const NavbarTop = () => {
-//   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-// const menuItems = [
-//   { name: "Home", link: "/" },
-//   { name: "About us", link: "/about-us" },
-//   { name: "Portfolio", link: "/portfolio" },
-//   { name: "Services", link: "/services" },
-//   { name: "Contact us", link: "/contact" },
-// ];
-
-// const menuList = (
-//   <>
-//     {menuItems.map((item, index) => (
-//       <NavbarMenuItem key={`${item}-${index}`}>
-//         <Link
-//           className="w-full p-2 text-xs font-bold capitalize text-copy"
-//           href={item.link}
-//           onclick={() => setIsMenuOpen(!isMenuOpen)}
-//         >
-//           {item.name}
-//         </Link>
-//       </NavbarMenuItem>
-//     ))}
-//   </>
-// );
-
-//   return (
-//     <Navbar
-//       position="static"
-//       className="bg-transparent"
-//       maxWidth="xl"
-//       onMenuOpenChange={setIsMenuOpen}
-//     >
-//       <NavbarContent>
-//         <NavbarBrand>
-//           <Link href="/" className="text-xl font-bold">
-//             {/* LOGO */}
-//             {/* <Image
-//               src="/assets/logo.png"
-//               width={50}
-//               alt="Silicon Star Hub Ltd logo"
-//               className="opacity-80 brightness-0 filter dark:filter-none"
-//             /> */} Silicon Star Hub
-//           </Link>
-//         </NavbarBrand>
-//       </NavbarContent>
-
-//       <NavbarContent className="hidden gap-4 sm:flex" justify="end">
-//         {menuList}
-//       </NavbarContent>
-
-//       <NavbarContent justify="end sm:hidden">
-//         <NavbarMenuToggle
-//           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-//           className="sm:hidden"
-//         />
-//       </NavbarContent>
-//       <NavbarMenu className="bg-background">
-//         {menuList}
-//       </NavbarMenu>
-//     </Navbar>
-//   );
-// };
-
-// export default NavbarTop;
-
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -165,7 +82,7 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden space-x-8 md:flex">{menuList}</div>
 
-            <Link href="#contact" className="hidden rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100 md:block">
+            <Link href="/#contact" className="hidden rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100 md:block">
               Get Started
             </Link>
           </div>
@@ -176,9 +93,9 @@ export default function Navbar() {
           >
             <div className="space-y-3 pb-3 pt-4 flex flex-col">
               {menuList}
-              <button className="w-full rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100">
+              <Link  href="/#contact" className="w-full rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-gray-100">
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </nav>

@@ -4,9 +4,10 @@ const page = () => {
   return (
     <div className="bg-white">
       {/* <!-- Hero Section -->  */}
-      <section className="from-pluto-purple/90 to-pluto-purple/70 relative min-h-screen overflow-hidden bg-gradient-to-r">
+      {/* <section className="from-violet-700/90 to-violet-700/70 relative min-h-screen overflow-hidden bg-gradient-to-r"> */}
+      <section className="from-gray-700/90 to-gray-700/70 bg- white/50 relative min-h-screen overflow-hidden bg-gradient-to-r">
         {/* <!-- Responsive background image with overlay --> */}
-        <div className="absolute inset-0 bg- [url('/asset/childWithDrone.png')] bg-cover bg-center opacity-30 mix-blend-overlay md:bg-fixed"></div>
+        <div className="absolute inset-0 bg-[url('/asset/childWithDrone.png')] bg-cover bg-center opacity-30 mix-blend-overlay md:bg-fixed"></div>
 
         {/* <!-- Foreground content --> */}
         <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center">
@@ -16,11 +17,11 @@ const page = () => {
               alt="Logo"
               className="mx-auto w-[350px] md:w-[600px]"
             />
-            <p className="text-pluto-teal max-w-2xl text-lg md:text-2xl">
+            <p className="text-teal-600 max-w-2xl text-lg md:text-2xl">
               Igniting Tech Curiosity
             </p>
             <a href="#donate">
-              <button className="bg-pluto-teal text-pluto-purple rounded-full px-8 py-3 font-bold shadow-lg transition hover:bg-opacity-90">
+              <button className="bg-teal-600 text-violet-700 rounded-full px-8 py-3 font-bold shadow-lg transition hover:bg-opacity-90">
                 Support Our Mission
               </button>
             </a>
@@ -30,7 +31,7 @@ const page = () => {
 
       {/* <!-- About Section --> */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-pluto-purple mb-8 text-center text-3xl font-bold">
+        <h2 className="text-violet-700 mb-8 text-center text-3xl font-bold">
           This is what CDF is about
         </h2>
         <div className="grid items-center gap-12 md:grid-cols-2">
@@ -41,8 +42,8 @@ const page = () => {
               the digital revolution. Without exposure to digital tools, they
               risk being left behind in an ever-evolving world.`}
             </p>
-            <div className="bg-pluto-teal/10 border-pluto-teal rounded-lg border-l-4 p-6">
-              <p className="text-pluto-purple">
+            <div className="bg-teal-600/10 border-teal-600 rounded-lg border-l-4 p-6">
+              <p className="text-violet-700">
                 The Community Digital Fair (CDF) is here to change that.
               </p>
             </div>
@@ -60,7 +61,7 @@ const page = () => {
             <img
               src="./asset/images/boys.jpg"
               alt="Tech"
-              className="border-pluto-teal lazy h-48 w-full rounded-lg border-2 object-cover shadow-md"
+              className="border-teal-600 lazy h-48 w-full rounded-lg border-2 object-cover shadow-md"
               loading="lazy"
               width="640"
               height="427"
@@ -86,15 +87,15 @@ const page = () => {
       </section>
 
       {/* <!-- Challenge Section --> */}
-      <section className="bg-pluto-light px-4 py-16">
+      <section className="bg-gray-100 px-4 py-16">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-pluto-purple mb-12 text-center text-3xl font-bold">
+          <h2 className="text-violet-700 mb-12 text-center text-3xl font-bold">
             The Challenge
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="space-y-6">
-              <div className="border-pluto-purple rounded-xl border-t-4 bg-white p-8 shadow-sm">
-                <h3 className="text-pluto-purple mb-2 text-xl font-bold">
+              <div className="border-violet-700 rounded-xl border-t-4 bg-white p-8 shadow-sm">
+                <h3 className="text-violet-700 mb-2 text-xl font-bold">
                   Access Inequality
                 </h3>
                 <p className="text-gray-600">
@@ -102,8 +103,8 @@ const page = () => {
                   digital tools.
                 </p>
               </div>
-              <div className="border-pluto-teal rounded-xl border-t-4 bg-white p-8 shadow-sm">
-                <h3 className="text-pluto-purple mb-2 text-xl font-bold">
+              <div className="border-teal-600 rounded-xl border-t-4 bg-white p-8 shadow-sm">
+                <h3 className="text-violet-700 mb-2 text-xl font-bold">
                   Connectivity Gap
                 </h3>
                 <p className="text-gray-600">
@@ -111,7 +112,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-pluto-purple rounded-xl p-8 text-white shadow-md">
+            <div className="bg-violet-700 rounded-xl p-8 text-white shadow-md">
               <h3 className="mb-4 text-xl font-bold">Untapped Potential</h3>
               <p className="mb-6">
                 Without early digital exposure, innovation and potential remain
@@ -120,7 +121,7 @@ const page = () => {
               <img
                 src="./asset/communityImg.jpg"
                 alt="Challenge"
-                className="border-pluto-teal/30 lazy h-48 w-full rounded-lg border object-cover"
+                className="border-teal-600/30 lazy h-48 w-full rounded-lg border object-cover"
                 loading="lazy"
                 width="800"
                 height="450"
@@ -132,7 +133,7 @@ const page = () => {
 
       {/* <!-- Opportunity Section --> */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-pluto-purple mb-12 text-center text-3xl font-bold">
+        <h2 className="text-violet-700 mb-12 text-center text-3xl font-bold">
           The Opportunity
         </h2>
         <div className="grid gap-12 md:grid-cols-2">
@@ -143,7 +144,7 @@ const page = () => {
               e-commerce, and app development. But first the youth have to be
               nudged into curiosity.`}
             </p>
-            <div className="bg-pluto-purple rounded-xl p-8 text-white shadow-md">
+            <div className="bg-violet-700 rounded-xl p-8 text-white shadow-md">
               <p className="italic">
                 {`  "Curiosity is a crucial driver for innovation because it fuels
                 the desire to explore, question, and seek new solutions, leading
@@ -152,8 +153,8 @@ const page = () => {
             </div>
           </div>
           <div>
-            <div className="bg-pluto-teal/10 border-pluto-teal rounded-xl border-l-4 p-8">
-              <h3 className="text-pluto-purple mb-4 text-xl font-bold">
+            <div className="bg-teal-600/10 border-teal-600 rounded-xl border-l-4 p-8">
+              <h3 className="text-violet-700 mb-4 text-xl font-bold">
                 Local Solutions
               </h3>
               <p className="text-gray-700">
@@ -174,7 +175,7 @@ const page = () => {
       </section>
 
       {/* <!-- Pilot Edition Section --> */}
-      <section className="bg-pluto-purple px-4 py-16 text-white">
+      <section className="bg-violet-700 px-4 py-16 text-white">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-8 text-center text-3xl font-bold">
             Pilot Edition @ Prampram
@@ -182,20 +183,20 @@ const page = () => {
 
           <div className="mb-12 grid gap-12 md:grid-cols-2">
             <div>
-              <h3 className="text-pluto-teal mb-4 text-xl font-bold">
+              <h3 className="text-teal-600 mb-4 text-xl font-bold">
                 Why Prampram?
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>A
+                  <span className="text-teal-600 mr-2">•</span>A
                   representative coastal community with limited digital access
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>A community
+                  <span className="text-teal-600 mr-2">•</span>A community
                   rich in culture, ready to embrace innovation
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>A scalable
+                  <span className="text-teal-600 mr-2">•</span>A scalable
                   model for replication in Ho, Tamale, and beyond
                 </li>
               </ul>
@@ -204,7 +205,7 @@ const page = () => {
               <img
                 src="./asset/images/pict_large.jpg"
                 alt="Prampram"
-                className="border-pluto-teal/30 lazy h-64 w-full rounded-lg border object-cover shadow-lg"
+                className="border-teal-600/30 lazy h-64 w-full rounded-lg border object-cover shadow-lg"
                 loading="lazy"
                 width="800"
                 height="450"
@@ -214,55 +215,55 @@ const page = () => {
 
           <div className="grid gap-8 md:grid-cols-2">
             <div>
-              <h3 className="text-pluto-teal mb-4 text-xl font-bold">
+              <h3 className="text-teal-600 mb-4 text-xl font-bold">
                 Tech Activities
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Tricycle Tech Showcase
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Drone Selfies & Delivery Simulations
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Solar Charging Station (Learn & Charge Your Devices)
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Hands-on Coding with Tablets (Scratch for Kids)
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Computer assembling
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   VR Tours of Global Tech Hubs
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Photo & Video Editing Basics
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-pluto-teal mb-4 text-xl font-bold">
+              <h3 className="text-teal-600 mb-4 text-xl font-bold">
                 Non-Tech Fun
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Traditional Games & Storytelling
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Art & Craft
                 </li>
                 <li className="flex items-start">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Food Bazaar Supporting Local Vendors
                 </li>
               </ul>
@@ -273,50 +274,50 @@ const page = () => {
 
       {/* <!-- Impact Section --> */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-pluto-purple mb-12 text-center text-3xl font-bold">
+        <h2 className="text-violet-700 mb-12 text-center text-3xl font-bold">
           Impact & Sustainability
         </h2>
 
         <div className="grid gap-12 md:grid-cols-2">
-          <div className="border-pluto-purple rounded-xl border-t-4 bg-white p-8 shadow-sm">
-            <h3 className="text-pluto-purple mb-6 text-xl font-bold">
+          <div className="border-violet-700 rounded-xl border-t-4 bg-white p-8 shadow-sm">
+            <h3 className="text-violet-700 mb-6 text-xl font-bold">
               Short-Term (2025)
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <span className="text-pluto-teal mr-2">•</span>
+                <span className="text-teal-600 mr-2">•</span>
                 Replicate in 2 more communities (Ho & Tamale)
               </li>
               <li className="flex items-start">
-                <span className="text-pluto-teal mr-2">•</span>
+                <span className="text-teal-600 mr-2">•</span>
                 Train 100+ youth in digital skills
               </li>
               <li className="flex items-start">
-                <span className="text-pluto-teal mr-2">•</span>
+                <span className="text-teal-600 mr-2">•</span>
                 Inspire 50% of attendees to pursue tech careers
               </li>
               <li className="flex items-start">
-                <span className="text-pluto-teal mr-2">•</span>
+                <span className="text-teal-600 mr-2">•</span>
                 10 trained tech ambassadors to sustain activities
               </li>
             </ul>
           </div>
 
-          <div className="border-pluto-teal rounded-xl border-t-4 bg-white p-8 shadow-sm">
-            <h3 className="text-pluto-purple mb-6 text-xl font-bold">
+          <div className="border-teal-600 rounded-xl border-t-4 bg-white p-8 shadow-sm">
+            <h3 className="text-violet-700 mb-6 text-xl font-bold">
               Long-Term (2027)
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <span className="text-pluto-teal mr-2">•</span>
+                <span className="text-teal-600 mr-2">•</span>
                 Replicate in 10 communities
               </li>
               <li className="flex items-start">
-                <span className="text-pluto-teal mr-2">•</span>
+                <span className="text-teal-600 mr-2">•</span>
                 Train 500+ Tech Ambassadors nationwide
               </li>
               <li className="flex items-start">
-                <span className="text-pluto-teal mr-2">•</span>
+                <span className="text-teal-600 mr-2">•</span>
                 Tech hubs emerging in rural areas
               </li>
             </ul>
@@ -325,15 +326,15 @@ const page = () => {
       </section>
 
       {/* <!-- Suport Section --> */}
-      <section id="donate" className="bg-pluto-light px-4 py-16">
+      <section id="donate" className="bg-gray-100 px-4 py-16">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-pluto-purple mb-12 text-center text-3xl font-bold">
+          <h2 className="text-violet-700 mb-12 text-center text-3xl font-bold">
             How You Can Support
           </h2>
 
           <div className="grid gap-12 md:grid-cols-2">
             <div className="rounded-xl bg-blue-50 p-8 shadow-sm">
-              <h3 className="text-pluto-purple mb-6 text-xl font-bold">
+              <h3 className="text-violet-700 mb-6 text-xl font-bold">
                 Sponsor a Gadget
               </h3>
               <p className="mb-6 text-gray-700">
@@ -341,26 +342,26 @@ const page = () => {
               </p>
               <ul className="grid grid-cols-2 gap-4">
                 <li className="flex items-center">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Tablets/Phones
                 </li>
                 <li className="flex items-center">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   VR headsets
                 </li>
                 <li className="flex items-center">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Drones
                 </li>
                 <li className="flex items-center">
-                  <span className="text-pluto-teal mr-2">•</span>
+                  <span className="text-teal-600 mr-2">•</span>
                   Projectors
                 </li>
               </ul>
             </div>
 
-            <div className="bg-pluto-purple rounded-xl p-8 text-white shadow-md">
-              <h3 className="text-pluto-teal mb-6 text-xl font-bold">Donate</h3>
+            <div className="bg-violet-700 rounded-xl p-8 text-white shadow-md">
+              <h3 className="text-teal-600 mb-6 text-xl font-bold">Donate</h3>
               <p className="mb-6">
                 Every contribution brings digital access to more communities
               </p>
@@ -368,7 +369,7 @@ const page = () => {
                 href="https://wa.me/233268431393?text=Hello,%20I%20want%20to%20support%20the%20Digital%20Community%20Fair.%20I%20am%20interested%20in%20donating:%0A- [ ] Gadgets%0A- [ ] Personnel%0A- [ ] Money%0APlease%20let%20me%20know%20the%20next%20steps."
                 target="_blank"
               >
-                <button className="bg-pluto-teal text-pluto-purple rounded-full px-8 py-3 font-bold transition hover:bg-opacity-90">
+                <button className="bg-teal-600 text-violet-700 rounded-full px-8 py-3 font-bold transition hover:bg-opacity-90">
                   Make a Donation
                 </button>
               </a>

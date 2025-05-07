@@ -44,7 +44,7 @@ const CDF = () => {
               Igniting Tech Curiosity
             </p>
             <a href="#donate">
-              <button className="rounded-full bg-teal-600 px-8 py-3 font-bold text-violet-700 shadow-lg transition hover:bg-opacity-90">
+              <button className="rounded-full bg-teal-600 px-8 py-3 font-bold text-gray-700 shadow-lg transition hover:bg-opacity-90">
                 Support Our Mission
               </button>
             </a>
@@ -392,7 +392,7 @@ const CDF = () => {
                 href="https://wa.me/233268431393?text=Hello,%20I%20want%20to%20support%20the%20Digital%20Community%20Fair.%20I%20am%20interested%20in%20donating:%0A- [ ] Gadgets%0A- [ ] Personnel%0A- [ ] Money%0APlease%20let%20me%20know%20the%20next%20steps."
                 target="_blank"
               >
-                <button className="rounded-full bg-teal-600 px-8 py-3 font-bold text-violet-700 transition hover:bg-opacity-90">
+                <button className="rounded-full bg-teal-600 px-8 py-3 font-bold text-gray-700 transition hover:bg-opacity-90">
                   Make a Donation
                 </button>
               </a>
